@@ -63,11 +63,10 @@ enum CoroutineSum<I,O,R,E>{
   Hold(held:Held<I,O,R,E>);//Hold this value for waiting on an event or thread coordination.
   Halt(r:Return<R,E>);//done, or an error
 }
-
+```
 The other half of my Haxe/Blub solution are enumerations of the generic parameters which I build manually.
 
 for example:
-
 ```haxe
   enum InputRequestSum{
   /**Request State**/
