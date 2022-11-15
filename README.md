@@ -10,3 +10,4 @@ This system as it stands is implementable in anything that has generics (and opt
 ### [System Wide Conventions](conventions.md)  
 ### [General Information About Stx Libraries](libraries.md)  
 ### [Using Wildcards "`__`"](Wildcard.md)  
+### [Functions and Coroutines](functions-and-coroutines.md)
