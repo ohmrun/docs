@@ -47,6 +47,18 @@ abstract SomeString(String){
 }
 ```
 
+### Self
+#### Get published type.
+
+For use from within an abstract,provides the `this` value as it's externally available type.
+
+```haxe
+abstract SomeString(String){
+  private var self(get,never):SomeString;
+  private function get_self():SomeString return lift(this);
+}
+```
+
 ### fromFunXX
 #### Function to type Naming Conventions  
 
