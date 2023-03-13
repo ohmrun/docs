@@ -1,4 +1,4 @@
-#Fluent Interfaces
+# Fluent Interfaces
 
 Monad instances and Arrowlets gain a lot of their functionality through keeping the type stable through a chain of functions.
 
