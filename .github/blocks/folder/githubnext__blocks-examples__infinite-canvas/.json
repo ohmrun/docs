@@ -1,0 +1,31 @@
+{
+  "items": {
+    "1": {
+      "type": "file",
+      "path": "README.md",
+      "position": [
+        2250,
+        2320
+      ],
+      "dimensions": [
+        500,
+        360
+      ],
+      "block": {
+        "type": "file",
+        "id": "rich-text-markdown-block",
+        "title": "Rich-text Markdown Editor Block",
+        "description": "A rich-text editor block that stores Markdown",
+        "entry": "/src/blocks/rich-text-markdown-block/index.tsx",
+        "extensions": [
+          "md"
+        ],
+        "example_path": "https://github.com/githubnext/blocks-tutorial/blob/main/README.md",
+        "owner": "jaked",
+        "repo": "rich-text-markdown-block",
+        "key": "jaked__rich-text-markdown-block__rich-text-markdown-block"
+      },
+      "id": 1
+    }
+  }
+}
