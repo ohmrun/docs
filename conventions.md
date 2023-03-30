@@ -59,6 +59,12 @@ abstract SomeString(String){
 }
 ```
 
+### Make
+#### Default constructor static function
+
+Rather than name all possible constructor static functions, the convention is to make a fully open constructor `make` and use the roman numeral scheme
+`makeI`, `makeII` for unnamed constructors
+
 ### fromFunXX
 #### Function to type Naming Conventions  
 
@@ -107,6 +113,7 @@ Abstract types have an underscore accessor that allows access to the applicative
 ```haxe
   enum XSum{}
 ```  
+
 `Def`   -> `typedef`  
 ```haxe
   typedef XDef = {}
