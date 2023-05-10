@@ -1,10 +1,27 @@
 # Index  
 
-These documents present general information about the stx libraries and I'll update as I can.
+There are five value abstractions in the Stx library
 
-The libraries cover iteration, streams, coroutines, proxies (pairwise bounded coroutines) and ties it together with an effect system similar to `ZIO` called `Fletcher`.
+1) [Value Wrappers](value_wrappers.md)
+    
+    Easily structure values, carry error information without unpredicatable throws, and use a consistent API for collections and monads.
 
-This system as it stands is implementable in anything that has generics (and optionally tagged enumerations).
+2) [Futures/Promises](futures_promises.md)
+
+    Take the same API over gaps caused by polling and event waiting.
+
+3) [Arrowlets](arrowlets.md)
+
+    Open ended compositional programming: chunk operations in a testable way, and forward work to a scheduler no matter the platform.
+
+4) [Coroutines](coroutines.md)
+
+    Compose operations over streams of values, and deliver to the scheduler, ingestion and production of values being an explicit part of the API.
+
+5) [Proxies](proxies.md)
+
+    Bind upstream and downstream coroutines to manage sophisticated input/output schema
+
 
 ### Constructor Injection [APP](APP.md)  
 ### [System Wide Conventions](conventions.md)  
@@ -13,11 +30,3 @@ This system as it stands is implementable in anything that has generics (and opt
 ### [Functions and Coroutines](functions-and-coroutines.md)  
 ### [projection](projection.md)
 
-
-```mermaid
-flowchart LR
-    A[Start] --> B{Should you?}
-    B -- Yes --> C{{Do it}}
-    B -- Maybe --> D[(Save for later)]
-    B -- No --> E[Okay]
-```
