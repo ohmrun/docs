@@ -12,3 +12,12 @@ This system as it stands is implementable in anything that has generics (and opt
 ### [Using Wildcards "`__`"](Wildcard.md)  
 ### [Functions and Coroutines](functions-and-coroutines.md)  
 ### [projection](projection.md)
+
+
+```mermaid
+flowchart LR
+    A[Start] --> B{Should you?}
+    B -- Yes --> C{{Do it}}
+    B -- Maybe --> D[(Save for later)]
+    B -- No --> E[Okay]
+```
