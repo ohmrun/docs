@@ -1,5 +1,7 @@
 # Fluent Interfaces
 
+For an in depth explanation, here's the [wikipedia](https://en.wikipedia.org/wiki/Fluent_interface) article.
+ 
 Monad instances and Arrowlets gain a lot of their functionality through keeping the type stable through a chain of functions.
 
 Type unification in Haxe is quite literal and so the solution used here is to create an abstract to which all subtypes conform for compositional use.
