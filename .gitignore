@@ -1,0 +1,7 @@
+/.clj-kondo
+/.lsp
+/.env
+/.cp-cache
+/.calva
+/.portal
+/dist

@@ -1,0 +1,4 @@
+{
+ :deps {
+        eu.ohmrun/ron {:mvn/version "1.5-SNAPSHOT"}} 
+}
