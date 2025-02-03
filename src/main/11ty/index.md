@@ -11,7 +11,7 @@ There are five value abstractions in the Stx library
 3) [Arrowlets](./arrowlets)
     Open ended compositional programming: chunk operations in a testable way, and forward work to a scheduler no matter the platform.
 
-) [Coroutines](./coroutines)
+4) [Coroutines](./coroutines)
 
     Compose operations over streams of values, and deliver to the scheduler, ingestion and production of values being an explicit part of the API.
 
