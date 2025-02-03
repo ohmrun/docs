@@ -1,0 +1,11 @@
+<h1>Projection</h1>
+<p>a Projection is a way of describing a particular way of writing a Haxe module that looks like the following:</p>
+<p><code>XDef</code> - a typedef<br>
+<code>XApi</code> - an interface<br>
+<code>XSum</code> - an enum</p>
+<p>If the base is an <code>XDef</code>, it'll also contain an <code>XCls</code> with a partial or complete implementaion</p>
+<p><code>X</code> would be the <code>abstract</code> over the base, complete with constructors and <code>@:from</code> functions</p>
+<p><code>XLift</code> would contain all of the homomorphic or catamorphic functions of <code>X</code>,<br>
+accessed through an instance normally, or for applicative style via <code>X.__.fn(self:X,...)</code>;</p>
+<p><code>XCtr</code> if it exists is a set of constuctors of <code>X</code><br>
+<code>XArg</code> if it exists is an abstract over an enum of <code>XArgSum</code> which describes all possible constructor arguments together coupled with <code>@:from</code> functions to allow their implicit use.</p>

@@ -1,0 +1,11 @@
+<h1>Map</h1>
+<p><code>map</code> is a function which takes any generic <code>X&lt;T&gt;</code> and transforms <code>T</code> to <code>TT</code> via a lambda function.</p>
+<p>Here is a possible map for <code>Option</code>.</p>
+<pre><code class="language-haxe">static public function map&lt;T, TT&gt;(self: OptionSum&lt;T&gt;,f: T -&gt; TT):Option&lt;TT&gt; {
+  return switch(self){
+    case Some(v)  : Some(f(v));
+    case None     : None; 
+  }
+}
+</code></pre>
+<p>It is a homomorphic function in the sense that it takes an <code>Option</code> and returns an <code>Option</code>.</p>
