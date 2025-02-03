@@ -1,0 +1,8 @@
+<h1>Fluent Interfaces</h1>
+<p>For an in depth explanation, here's the <a href="https://en.wikipedia.org/wiki/Fluent_interface">wikipedia</a> article.</p>
+<p>Monad instances and Arrowlets gain a lot of their functionality through keeping the type stable through a chain of functions.</p>
+<p>Type unification in Haxe is quite literal and so the solution used here is to create an abstract to which all subtypes conform for compositional use.</p>
+<p>A <code>SomethingApi</code> wrapped by a <code>Something</code> abstract class will often have a declaration in the interface like so:</p>
+<pre><code class="language-haxe">  public function toSomething():Something
+</code></pre>
+<p>This function should not need to be called where constructors are avaliable in the abstract type declaration but if introducing a new member which is an implementation of <code>SomethingApi</code> it would often be necessary to call <code>toSomething</code> so the type system behaves correctly</p>
