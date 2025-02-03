@@ -1,4 +1,8 @@
 {
  :deps {
-        eu.ohmrun/ron {:mvn/version "1.5-SNAPSHOT"}} 
+        eu.ohmrun/ron {:mvn/version "1.6"}} 
+ :tasks {
+         :requires ([babashka.process :as proc])
+         serve (proc/shell {:dir "elevenish"} "pnpm" "exec" "eleventy" "--serve")
+         }
 }

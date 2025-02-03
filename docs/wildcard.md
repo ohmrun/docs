@@ -32,11 +32,13 @@ __.assert()//stx_assert
 Although some of the more high falutin' libraries (stx_coroutine, stx_proxy) connect their constructors directly.  
 
 ```haxe
+  
   //stx.Proxy
   __.await(a,b -> null);
   __.yield(y,x -> null);
   __.belay(ft);
   __.ended(r)
+
   //stx.Coroutine
   __.wait(f -> null);
   __.emit(1,x);
