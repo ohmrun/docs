@@ -1,3 +1,7 @@
+---
+title: Stx
+layout: base.njk
+---
 There are five value abstractions in the Stx library
 
 1) [Value Wrappers](./value_wrappers)
