@@ -12,6 +12,7 @@ There are five value abstractions in the Stx library
 
     Take the same API over gaps caused by polling and event waiting.
 
+
 3) [Arrowlets](./arrowlets)
     Open ended compositional programming: chunk operations in a testable way, and forward work to a scheduler no matter the platform.
 

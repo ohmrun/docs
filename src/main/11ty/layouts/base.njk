@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html>
   <head>
   {# https://stackoverflow.com/questions/44657829/css-file-blocked-mime-type-mismatch-x-content-type-options-nosniff #}
-  <link type="text/css" href="/bundle.css"></link>
+  <link rel="stylesheet" href="{{ "bundle.css" | htmlBaseUrl }}"></link>
   </head>
   <body>
-  {{ content | safe }}
+  {{ content | safe}}
   </body>
 </html>

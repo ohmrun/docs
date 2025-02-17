@@ -3,6 +3,6 @@
         eu.ohmrun/ron {:mvn/version "1.6"}} 
  :tasks {
          :requires ([babashka.process :as proc])
-         serve (proc/shell "bb" "--config" "elevenish/bb.edn" "serve")
+         serve (proc/shell {:dir "elevenish" } "bb" "serve")
          }
 }
