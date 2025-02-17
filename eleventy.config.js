@@ -1,7 +1,7 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 export default function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("bundle.css");
+  eleventyConfig.addPassthroughCopy({ "../bundle.css": "bundle.css" });
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   // pathPrefix
   return {
@@ -10,7 +10,8 @@ export default function(eleventyConfig) {
       output    : "../docs",
       layouts   : "layouts",
       data      : "_global"
-    }
+    },
+    pathPrefix : "/"
   };
 } 
 

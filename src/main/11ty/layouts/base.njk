@@ -2,7 +2,7 @@
 <html>
   <head>
   {# https://stackoverflow.com/questions/44657829/css-file-blocked-mime-type-mismatch-x-content-type-options-nosniff #}
-  <link rel="stylesheet" href="{{ "bundle.css" | htmlBaseUrl }}"></link>
+  <link rel="stylesheet" href="{{ '/bundle.css' | htmlBaseUrl }}"></link>
   </head>
   <body>
   {{ content | safe}}
